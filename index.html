@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+
+   <!-- Font Awesome CDN Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <!-- Google Font for premium typography -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <!-- Custom CSS file link -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="home.php" class="logo"><i class="fas fa-house"></i>MyHome</a>
+
+         <ul>
+            <li><a href="post_property.php">post property<i class="fas fa-paper-plane"></i></a></li>
+         </ul>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="#">my listings<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="dashboard.php">dashboard</a></li>
+                     <li><a href="post_property.php">post property</a></li>
+                     <li><a href="my_listings.php">my listings</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">options<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="search.php">filter search</a></li>
+                     <li><a href="listings.php">all listings</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">help<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="about.php">about us</a></i></li>
+                     <li><a href="contact.php">contact us</a></i></li>
+                     <li><a href="contact.php#faq">FAQ</a></i></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="saved.php">saved <i class="far fa-heart"></i></a></li>
+            <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+               <ul>
+                  <li><a href="login.php">login now</a></li>
+                  <li><a href="register.php">register new</a></li>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </section>
+   </nav>
+
+</header>
+
+<!-- header section ends -->
+<!-- Home Section -->
+<div class="home">
+
+   <section class="center">
+      <form action="search.php" method="post">
+         <h3>Find Your Perfect Home</h3>
+         <div class="box">
+            <p>Enter Location <span>*</span></p>
+            <input type="text" name="h_location" required maxlength="100" placeholder="Enter city name" class="input">
+         </div>
+         <div class="flex">
+            <div class="box">
+               <p>Property Type <span>*</span></p>
+               <select name="h_type" class="input" required>
+                  <option value="flat">Flat</option>
+                  <option value="house">House</option>
+                  <option value="shop">Shop</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Offer Type <span>*</span></p>
+               <select name="h_offer" class="input" required>
+                  <option value="sale">Sale</option>
+                  <option value="resale">Resale</option>
+                  <option value="rent">Rent</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Minimum Budget <span>*</span></p>
+               <select name="h_min" class="input" required>
+                  <!-- Add all your budget options here -->
+               </select>
+            </div>
+            <div class="box">
+               <p>Maximum Budget <span>*</span></p>
+               <select name="h_max" class="input" required>
+                  <!-- Add all your budget options here -->
+               </select>
+            </div>
+         </div>
+         <input type="submit" value="Search Property" name="h_search" class="btn">
+      </form>
+   </section>
+
+</div>
+
+<!-- Listings Section -->
+<section class="listings">
+   <h1 class="heading">Latest Listings</h1>
+
+   <div class="box-container">
+            <form action="" method="POST">
+         <div class="box">
+            <input type="hidden" name="property_id" value="Xl2SR1KXKSDAdYmZsIC5">
+                        <button type="submit" name="save" class="save"><i class="far fa-heart"></i><span>Save</span></button>
+                        <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>1</span></p> 
+               <img src="uploaded_files/eU8CfcmT1fPkwZ8ReXiD.jpeg" alt="">
+            </div>
+            <div class="admin">
+               <h3>V</h3>
+               <div>
+                  <p>Vishva B</p>
+                  <span>2024-12-27</span>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="price"><i class="fas fa-indian-rupee-sign"></i><span>1000000</span></div>
+            <h3 class="name">ab illam</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>R.s Xerox,Near SNS TECHNOLOGY,SNS kalvi nagar, valliyampalayam, Coimbatore,</span></p>
+            <div class="flex">
+               <p><i class="fas fa-house"></i><span>house</span></p>
+               <p><i class="fas fa-tag"></i><span>sale</span></p>
+               <p><i class="fas fa-bed"></i><span>1 BHK</span></p>
+               <p><i class="fas fa-trowel"></i><span>ready to move</span></p>
+               <p><i class="fas fa-couch"></i><span>unfurnished</span></p>
+               <p><i class="fas fa-maximize"></i><span>1000 sqft</span></p>
+            </div>
+            <div class="flex-btn">
+               <a href="view_property.php?get_id=Xl2SR1KXKSDAdYmZsIC5" class="btn">View Property</a>
+               <input type="submit" value="Send Enquiry" name="send" class="btn">
+            </div>
+
+            <!-- Price Negotiation Dropdown -->
+            <div class="box">
+               <p>Negotiate Price</p>
+               <select name="negotiation_percentage" class="input">
+                                       <option value="1">1%</option>
+                                       <option value="2">2%</option>
+                                       <option value="3">3%</option>
+                                       <option value="4">4%</option>
+                                       <option value="5">5%</option>
+                                       <option value="6">6%</option>
+                                       <option value="7">7%</option>
+                                       <option value="8">8%</option>
+                                       <option value="9">9%</option>
+                                       <option value="10">10%</option>
+                                 </select>
+               <input type="submit" value="Negotiate Price" name="negotiate" class="btn">
+            </div>
+         </div>
+      </form>
+         </div>
+
+   <div style="margin-top: 2rem; text-align:center;">
+      <a href="listings.php" class="inline-btn">View All</a>
+   </div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:1111111"><i class="fas fa-phone"></i><span>1111111</span></a>
+         <a href="tel:22222222"><i class="fas fa-phone"></i><span>22222222</span></a>
+         <a href="realestatehub@gmail.com"><i class="fas fa-envelope"></i><span>realestatehub@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Tamilnadu, india - 641035</span></a>
+      </div>
+
+      <div class="box">
+         <a href="home.php"><span>home</span></a>
+         <a href="about.php"><span>about</span></a>
+         <a href="contact.php"><span>contact</span></a>
+         <a href="listings.php"><span>all listings</span></a>
+         <a href="saved.php"><span>saved properties</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+  
+</footer>
+
+<!-- footer section ends -->
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+
+
+<script>
+   let range = document.querySelector("#range");
+   range.oninput = () =>{
+      document.querySelector('#output').innerHTML = range.value;
+   }
+</script>
+
+</body>
+</html>
+
+
+<!-- Chatbot Button -->
+<div id="chatbot-button" class="chatbot-button">
+   <i class="fas fa-comment"></i> Chat with us
+</div>
+
+<!-- Chat Modal -->
+<div id="chatbot-modal" class="chatbot-modal">
+   <div class="chatbot-modal-content">
+      <span id="close-chatbot" class="close-chatbot">&times;</span>
+      <!-- Embed your chatbot here -->
+      <iframe src="http://localhost/project/chatbot/bot.php" width="100%" height="100%"></iframe>
+
+
+   </div>
+
+<!-- Chatbot Modal Styles -->
+<style>
+   /* Chatbot button styles */
+   .chatbot-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #DA2C32;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+   }
+
+   /* Chatbot modal styles */
+   .chatbot-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+   }
+
+   .chatbot-modal-content {
+      position: relative;
+      background-color: white;
+      width: 80%;
+      height: 80%;
+      margin: 50px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+
+   /* Close button */
+   .close-chatbot {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      color: #DA2C32;
+      cursor: pointer;
+   }
+
+   .close-chatbot:hover {
+      color: #DA2C32;
+   }
+</style>
+
+<!-- Chatbot Interaction Script -->
+<script>
+   // Get elements
+   const chatbotButton = document.getElementById("chatbot-button");
+   const chatbotModal = document.getElementById("chatbot-modal");
+   const closeChatbot = document.getElementById("close-chatbot");
+
+   // Open chatbot modal
+   chatbotButton.onclick = function() {
+      chatbotModal.style.display = "block";
+   }
+
+   // Close chatbot modal
+   closeChatbot.onclick = function() {
+      chatbotModal.style.display = "none";
+   }
+
+   // Close modal if user clicks outside the modal
+   window.onclick = function(event) {
+      if (event.target == chatbotModal) {
+         chatbotModal.style.display = "none";
+      }
+   }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:1111111"><i class="fas fa-phone"></i><span>1111111</span></a>
+         <a href="tel:22222222"><i class="fas fa-phone"></i><span>22222222</span></a>
+         <a href="realestatehub@gmail.com"><i class="fas fa-envelope"></i><span>realestatehub@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Tamilnadu, india - 641035</span></a>
+      </div>
+
+      <div class="box">
+         <a href="home.php"><span>home</span></a>
+         <a href="about.php"><span>about</span></a>
+         <a href="contact.php"><span>contact</span></a>
+         <a href="listings.php"><span>all listings</span></a>
+         <a href="saved.php"><span>saved properties</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+  
+</footer>
+
+<!-- footer section ends -->
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
